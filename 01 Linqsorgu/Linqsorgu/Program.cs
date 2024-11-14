@@ -7,6 +7,8 @@ class Program
     static void Main()
     {
 
+    // random nesnesi oluşturup 10 tane sayı oluşturduk. 
+        
         Random rand = new Random();
         List<int> sayilar = new List<int>();
 
@@ -18,6 +20,10 @@ class Program
 
 
         }
+
+        // bizden istenilenler için tek tek sorgu yapıyoruz. 
+
+        
         Console.WriteLine("çift sayilar");
 
         var çiftsayilar = sayilar.Where(x => x % 2 == 0).ToList();
